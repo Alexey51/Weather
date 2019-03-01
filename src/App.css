@@ -1,32 +1,125 @@
-.App {
-  text-align: center;
+body{
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+.dives{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.weather{
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.weather > div{
+  padding: 13px;
+    margin: 1vh;
+    font-size: 1.5em;
+
+    border-radius: 20%;
+}
+.blocktext{
+  font-size: -webkit-xxx-large;
+  color:black;
+}
+.infocity{
+  text-align: center;
+  background-image: url(./images/foto30.jpg);
+  height:100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+::placeholder {
+  color: black;
+  /* opacity: 1; */
+}
+.firstdiv{
+  height: 100vh;
+display: flex;
+width: 100%;
+    overflow: auto;
+    /* background-color: antiquewhite; */
+}
+.footer{
+  width: 100%;
+    height: 50px;
+    background-color: steelblue;
+    text-align: center;
+}
+.info{
+      padding-bottom: 15vh;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.logo{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.textinfo,h2 {
+  font-size: 2.5em;
+    color: black;
+}
+form{
+  font-size: xx-large;
+}
+.block-weather {
+  background-color: cornflowerblue;
+}
+.menuname >a{
+  margin: 0px 20px;
+}
+@media screen and (max-width:970px){
+	.weather > div{
+    background-color: cornflowerblue;
   }
-  to {
-    transform: rotate(360deg);
+  .textinfo,h2 {
+    font-size: 2em;
+    padding-top: 3vh;
+
   }
+  .info {
+    padding-bottom: unset;
+}
+}
+@media screen and (max-width:500px){
+
+	.weather > div{
+    background-color: cornflowerblue;
+  }
+  .textinfo,h2 {
+    font-size: 1.5em;
+    padding-top: 3vh;
+  }
+  .info {
+    padding-bottom: unset;
+}
+.blocktext{
+  font-size: 1.5em;
+}
+form {
+    padding-bottom: 3vh;
+    font-size: larger;
+
+}
 }
