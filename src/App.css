@@ -57,9 +57,9 @@ width: 100%;
 }
 .footer{
   width: 100%;
-  height: 100px;
-  background-color: steelblue;
-  border-radius: 10px;
+    height: 50px;
+    background-color: steelblue;
+    text-align: center;
 }
 .info{
       padding-bottom: 15vh;
@@ -78,7 +78,6 @@ width: 100%;
 }
 .textinfo,h2 {
   font-size: 2.5em;
-
     color: black;
 }
 form{
@@ -94,4 +93,33 @@ form{
 	.weather > div{
     background-color: cornflowerblue;
   }
+  .textinfo,h2 {
+    font-size: 2em;
+    padding-top: 3vh;
+
+  }
+  .info {
+    padding-bottom: unset;
+}
+}
+@media screen and (max-width:500px){
+
+	.weather > div{
+    background-color: cornflowerblue;
+  }
+  .textinfo,h2 {
+    font-size: 1.5em;
+    padding-top: 3vh;
+  }
+  .info {
+    padding-bottom: unset;
+}
+.blocktext{
+  font-size: 1.5em;
+}
+form {
+    padding-bottom: 3vh;
+    font-size: larger;
+
+}
 }
