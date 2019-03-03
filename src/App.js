@@ -29,6 +29,7 @@ class App extends React.Component{
           country.country = data.city.country;
           country.city = data.city.name;
         }
+
         stateData.push(
           <Weather className="weather"
           date={day.dt_txt}
